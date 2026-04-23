@@ -42,7 +42,7 @@ h2::before { content: ""; width: 6px; height: 35px; background: var(--emerald); 
 .exp-detail { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem; }
 .detail-list { padding-left: 1.2rem; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem; }
 
-/* --- Work Samples Updated Grid --- */
+/* --- Work Samples --- */
 .project-card { 
     background: rgba(15, 23, 42, 0.5); 
     padding: 2rem; 
@@ -72,14 +72,17 @@ h2::before { content: ""; width: 6px; height: 35px; background: var(--emerald); 
 .project-summary p { margin-bottom: 0.6rem; font-size: 0.9rem; }
 .status-tag { background: rgba(16, 185, 129, 0.1); color: var(--emerald); padding: 5px 12px; border-radius: 20px; font-size: 0.8rem; border: 1px solid var(--emerald); }
 
-/* Mobile Adjustment for Work Samples */
+/* Mobile Adjustment */
 @media (max-width: 768px) {
     .project-card { flex-direction: column; align-items: center; }
     .square-frame { width: 100%; height: 200px; }
+    .nav-links { gap: 2rem; }
 }
 
 /* --- Credentials --- */
 .education-block-highlight { border: 2px solid var(--emerald); background: rgba(16, 185, 129, 0.05); padding: 3rem; border-radius: 20px; margin-bottom: 3rem; text-align: left; }
+.award-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; }
+.award-date { color: var(--frosted-blue); font-weight: 600; }
 .cert-row-center { display: flex; justify-content: center; gap: 4rem; margin-bottom: 3rem; }
 .cert-item-small img { width: 80px; margin-bottom: 1rem; }
 .medal-box { display: flex; align-items: center; gap: 12px; color: #fbbf24; font-size: 1.1rem; margin-top: 1rem; }
@@ -87,10 +90,11 @@ h2::before { content: ""; width: 6px; height: 35px; background: var(--emerald); 
 /* --- Download Buttons --- */
 .download-flex-center { display: flex; justify-content: center; gap: 3rem; margin-top: 1rem; }
 .btn-download, .btn-download-alt { text-decoration: none; padding: 0.9rem 2.2rem; border-radius: 12px; font-weight: bold; display: flex; align-items: center; gap: 12px; transition: 0.3s; }
-.btn-download { background: var(--emerald); color: white; }
+.btn-download { background: var(--emerald); color: white; border: 2px solid var(--emerald); }
 .btn-download-alt { border: 2px solid var(--emerald); color: var(--emerald); }
+.btn-download:hover, .btn-download-alt:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(16, 185, 129, 0.2); }
 
-/* --- Contact & Icons --- */
+/* --- Contact --- */
 .contact-info-block { margin-bottom: 2rem; color: var(--text-muted); font-size: 1.1rem; }
 .contact-info-block p { margin-bottom: 0.5rem; }
 .contact-info-block i { color: var(--emerald); margin-right: 12px; width: 20px; text-align: center; }
